@@ -38,7 +38,7 @@
 
 using System;
 
-namespace DayOf_1_Degiskenler
+namespace DayOf_2_Degiskenler
 {
     class Program 
     {
