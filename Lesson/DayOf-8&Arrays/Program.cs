@@ -83,13 +83,13 @@ namespace DayOf_8_Arrays
 
             #region Array Metods
             // Dizi Tanımlama
-            int[] sayilar = { 5, 2, 8, 1, 9 };
+            int[] sayilar2 = { 5, 2, 8, 1, 9 };
 
             // Dizi Sıralama
-            Array.Sort(sayilar); // sayilar dizisini sıralar
+            Array.Sort(sayilar2); // sayilar dizisini sıralar
 
             // Dizi Elemanı Arama
-            int indeks = Array.BinarySearch(sayilar, 3); // 3 değerini arar ve indeksini döndürür
+            int indeks = Array.BinarySearch(sayilar2, 3); // 3 değerini arar ve indeksini döndürür
 
             // Dizi Kopyalama
             int[] kaynakDizi = { 1, 2, 3, 4, 5 };
