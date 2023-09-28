@@ -84,7 +84,7 @@
 
 using System;
 
-namespace DayOf_8_Metods
+namespace DayOf_9_Metods
 {
     class Program
     {
@@ -108,6 +108,14 @@ namespace DayOf_8_Metods
         {
             sayi++;
         }
+
+        public static int Factorial(int n)
+        {
+            if (n == 0)
+                return 1;
+            return n * Factorial(n - 1);
+        }
+
         static void Main()
         {
             // Metod (Method) Kullanımı
@@ -137,47 +145,40 @@ namespace DayOf_8_Metods
 
             // Rekursif Metods
             Factorial(3);
-            public static int Factorial(int n)
-            {
-                if (n == 0)
-                    return 1;
-                return n * Factorial(n - 1);
-            }
-
             // Extensions Metods
             string kelime = "merhaba";
             string yeniKelime = kelime.UppercaseFirstLetter(); // "Merhaba"
         }
+    }
 
-        public class HesapMakinesi
+    public class HesapMakinesi
+    {
+        // İki tamsayıyı toplayan metot
+        public int Topla(int sayi1, int sayi2)
         {
-            // İki tamsayıyı toplayan metot
-            public int Topla(int sayi1, int sayi2)
-            {
-                return sayi1 + sayi2;
-            }
-
-            // İki ondalıklı sayıyı toplayan metot
-            public double Topla(double sayi1, double sayi2)
-            {
-                return sayi1 + sayi2;
-            }
-
-            // Üç tamsayıyı toplayan metot
-            public int Topla(int sayi1, int sayi2, int sayi3)
-            {
-                return sayi1 + sayi2 + sayi3;
-            }
+            return sayi1 + sayi2;
         }
 
-        public static class StringExtensions
+        // İki ondalıklı sayıyı toplayan metot
+        public double Topla(double sayi1, double sayi2)
         {
-            public static string UppercaseFirstLetter(this string str)
-            {
-                if (string.IsNullOrEmpty(str))
-                    return str;
-                return char.ToUpper(str[0]) + str.Substring(1);
-            }
+            return sayi1 + sayi2;
+        }
+
+        // Üç tamsayıyı toplayan metot
+        public int Topla(int sayi1, int sayi2, int sayi3)
+        {
+            return sayi1 + sayi2 + sayi3;
+        }
+    }
+
+    public static class StringExtensions
+    {
+        public static string UppercaseFirstLetter(this string str)
+        {
+            if (string.IsNullOrEmpty(str))
+                return str;
+            return char.ToUpper(str[0]) + str.Substring(1);
         }
     }
 }
