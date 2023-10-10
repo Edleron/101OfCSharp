@@ -87,7 +87,7 @@ namespace DayOf_12_Collections {
             bool ahmetVarMi = telefonRehberi.ContainsValue("Ahmet"); // false
             bool mehmetVarMi = telefonRehberi.ContainsKey("Mehmet"); // false
             bool degerVarMi = telefonRehberi.ContainsValue(5551234567); // true
-             bool degerVarMi = telefonRehberi.Remove(5551234567); // Silme işlemi
+            bool degerVarMi = telefonRehberi.Remove(5551234567); // Silme işlemi
             telefonRehberi.Clear(); // Tüm öğeleri siler
             int elemanSayisi = telefonRehberi.Count; // 0
 
