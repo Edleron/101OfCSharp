@@ -10,7 +10,8 @@ class Program
     }
 
     #region State - 1
-    static void StateOne(){
+    static void StateOne()
+    {
         ArrayList primeNumbers = new ArrayList();
         ArrayList nonPrimeNumbers = new ArrayList();
 
@@ -88,9 +89,10 @@ class Program
     #endregion
 
     #region State - 2
-    static void StateTwo(){
+    static void StateTwo()
+    {
         int[] numbers = new int[20];
-        
+
         for (int i = 0; i < 20; i++)
         {
             Console.Write("Bir sayı giriniz: ");
@@ -150,12 +152,13 @@ class Program
     #endregion
 
     #region State - 3
-    static void StateThree(){
+    static void StateThree()
+    {
         Console.Write("Bir cümle giriniz: ");
         string cumle = Console.ReadLine();
 
         char[] sesliHarfDizisi = CumledekiSesliHarfleriBul(cumle);
-        
+
         Array.Sort(sesliHarfDizisi);
 
         Console.WriteLine("Sesli Harfler Sıralı:");

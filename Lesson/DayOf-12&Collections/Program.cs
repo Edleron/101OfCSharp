@@ -1,8 +1,9 @@
-﻿namespace DayOf_12_Collections {
+﻿namespace DayOf_12_Collections
+{
     #region DESCRIPTION
     // Klasik programlama dillerinde array yani diziler çok önemli veri tipleridir. 
     // Birçok problemimizi diziler yardımıyla çözebiliriz ama bazı handikapları nedeniyle birçok sorun karşısında da yetersiz kalırlar.Bu sorunları şöyle sıralayabiliriz:
-    
+
     // Oysa programlama dillerinde farklı türlerde verileri saklamaya ihtiyaç duyarız. Ve çoğu zaman ne kadar veri saklayacağımız program akışında belli olabilir. 
     // Koleksiyonlar tam da bu sorunları çözmek için dizilerin handikaplarından yaratılmıştır.
 
@@ -31,7 +32,7 @@
     // -> ArrayList
     // -> Dictionary
     // -> HashTable
-    
+
     // Özel Amaçlı Koleksiyonşar
     // -> Hybrit Dictionary
     // -> Name Value Dictionary

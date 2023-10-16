@@ -1,4 +1,5 @@
-namespace DayOf_14_Class {
+namespace DayOf_14_Class
+{
     #region Statics
     // Bir sınıfın static olamayan üyelerine nesneler aracılığıyla erişirken static olan metotlara ve özelliklere ise nesne oluşturmadan o sınıfın ismi aracılığıyla erişiriz.
     // Normal metotlar gibi kurucu metotları da static olarak tanımlayabiliriz. Sınıfın static üyelerinin başlangıç değerlerini static kurucular aracılığıyla yapabiliriz. Parametre almazlar ve erişim belirleyicileri yoktur.
@@ -28,7 +29,7 @@ namespace DayOf_14_Class {
             Workers workesTwo = new Workers("Wilkagul");
             Console.WriteLine("Çalışan Sayısı : {0}", Workers.WorkersCount);
 
-            Console.WriteLine("Toplam Çalışan Sayısı : {0}",Operatiton.Test(workesTwo.workersCount, workesOne.workersCount));
+            Console.WriteLine("Toplam Çalışan Sayısı : {0}", Operatiton.Test(workesTwo.workersCount, workesOne.workersCount));
         }
     }
 

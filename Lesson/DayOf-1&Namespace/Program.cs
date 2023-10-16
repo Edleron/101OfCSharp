@@ -17,9 +17,10 @@ using System;
 
 namespace DayOf_1_Namespace
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             Console.WriteLine("Hello, World!");
 
             Console.WriteLine("Please Names Enter:");

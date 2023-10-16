@@ -1,35 +1,36 @@
-namespace DayOf_12_Collections {
+namespace DayOf_12_Collections
+{
     #region Generic Collections
-    
+
     #region Generic Collections Nedir ? 
 
     // Generic Collections, C#'ta veri yapılarını temsil eden ve içerdikleri veri türünü parametre olarak alan sınıflardır. 
     // Bu, koleksiyonları belirli bir veri türüne özgü olmaktan kurtarır ve aynı koleksiyon türünü farklı veri türleri için kullanmanıza olanak tanır.
-    
+
     #endregion
 
     #region System.Collections.Generic Namespace
 
     // Generic koleksiyon sınıfları, "System.Collections.Generic" isim alanında bulunur. Bu nesneleri kullanmak için bu isim alanını projenize eklemeniz gerekecektir.
-    
+
     #endregion
 
     #region Generic List (List<T>) Örneği:
 
     // List<T>, dinamik boyuta sahip bir dizi gibi davranan ve genellikle kullanılan bir koleksiyon türüdür. İçerisinde sakladığı tüm veriler aynı türde olmalıdır.
-    
+
     #endregion
 
     #region Generic Dictionary (Dictionary<TKey, TValue>) Örneği:
 
     // Dictionary<TKey, TValue>, bir anahtar-değer çifti koleksiyonudur. Bu koleksiyon, bir anahtar ile ilişkilendirilmiş bir değeri saklar.
-    
+
     #endregion
 
     #region  Generic Queue (Queue<T>) ve Stack (Stack<T>) Örneği:
 
     // Queue<T> ve Stack<T>, sırayla işlem yapmak için kullanılan koleksiyon türleridir. Queue<T>, bir kuyruk (FIFO - İlk Giren İlk Çıkar) işlemi yaparken, Stack<T> ise bir yığın (LIFO - Son Giren İlk Çıkar) işlemi yapar.
-    
+
     #endregion
 
     #region  Generic Collections Avantajları:
@@ -37,7 +38,7 @@ namespace DayOf_12_Collections {
     // Tip güvenliği: Veri türü uyumsuzluğunu en aza indirir.
     // Performans: Özelleştirilmiş koleksiyonlar, performansı artırabilir.
     // Kod tekrarı: Aynı koleksiyon türünü farklı veri türleri için yeniden kullanma olanağı sağlar.
-    
+
     #endregion
 
     #endregion

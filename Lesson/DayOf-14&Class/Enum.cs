@@ -1,4 +1,5 @@
-namespace DayOf_14_Class {
+namespace DayOf_14_Class
+{
     #region 
     // Uygulama geliştirirken sabit değerlerle çalışmak durumunda kalırız. Bu noktalarda okunabilirliği yüksek bir program yazmak istiyorsak enum'lardan faydalanırız.
     // "enum" anahtar kelimesi enumeration yani numaralandırma kelimesinden gelir. Sayısal verilerı string ifadelerle saklamanızı sağlar. Okunabilirliğe katkısı da tam olarak burdan gelir diyebiliriz.
@@ -11,19 +12,20 @@ namespace DayOf_14_Class {
     {
         static void Main(string[] args)
         {
-           Console.WriteLine(Gunler.pazar);
-           Console.WriteLine((int)Gunler.pazar);
+            Console.WriteLine(Gunler.pazar);
+            Console.WriteLine((int)Gunler.pazar);
 
-           int sicaklik = 25;
+            int sicaklik = 25;
 
-           if (sicaklik < (int)HavaDurumu.Normal)
-           {
+            if (sicaklik < (int)HavaDurumu.Normal)
+            {
                 Console.Writeline("Normalin Altında")
-           }
+            }
         }
     }
 
-    enum Gunler{
+    enum Gunler
+    {
         Pazartesi = 0,
         Sali,
         Çarşamba,
@@ -33,5 +35,5 @@ namespace DayOf_14_Class {
         Pazar
     }
 
-    enum HavaDurumu {Soguk = 1, Normal = 20, Sıcak = 30, CokSicak = 40}
+    enum HavaDurumu { Soguk = 1, Normal = 20, Sıcak = 30, CokSicak = 40 }
 }

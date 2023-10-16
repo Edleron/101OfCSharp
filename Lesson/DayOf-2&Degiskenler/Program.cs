@@ -40,9 +40,10 @@ using System;
 
 namespace DayOf_2_Degiskenler
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             // 1. Değişken tanımlama ve değer atama
             int yas = 30;
             double not = 85.5;

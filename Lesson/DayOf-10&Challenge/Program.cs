@@ -41,7 +41,7 @@ namespace DayOf_10_Challenges
         }
 
         // STATE - 1
-        public static void StateOne() 
+        public static void StateOne()
         {
             Console.Write("Pozitif bir sayı girin (n): ");
             if (int.TryParse(Console.ReadLine(), out int n) && n > 0)
@@ -75,7 +75,7 @@ namespace DayOf_10_Challenges
             }
             Console.ReadLine(); // Konsol penceresini kapatmak için bir tuşa basılmasını bekleyin.
         }
-    
+
         // STATE - 2
         public static void StateTwo()
         {
@@ -120,9 +120,10 @@ namespace DayOf_10_Challenges
 
             Console.ReadLine(); // Konsol penceresini kapatmak için bir tuşa basılmasını bekleyin.
         }
-    
+
         // STATE - 3
-        public static void StateThree(){
+        public static void StateThree()
+        {
             Console.Write("Pozitif bir sayı girin (n): ");
             if (int.TryParse(Console.ReadLine(), out int n) && n > 0)
             {
@@ -148,9 +149,10 @@ namespace DayOf_10_Challenges
 
             Console.ReadLine(); // Konsol penceresini kapatmak için bir tuşa basılmasını bekleyin.
         }
-    
+
         // STATE - 4
-        public static void StateFour(){
+        public static void StateFour()
+        {
             Console.Write("Bir cümle yazın: ");
             string cumle = Console.ReadLine();
 
@@ -172,5 +174,5 @@ namespace DayOf_10_Challenges
 
             Console.ReadLine(); // Konsol penceresini kapatmak için bir tuşa basılmasını bekleyin.
         }
-    }   
+    }
 }

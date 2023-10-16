@@ -21,9 +21,10 @@ using System;
 
 namespace DayOf_6_Condition
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             // if-else yapısı örneği
             int yas = 18;
 

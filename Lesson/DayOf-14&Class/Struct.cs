@@ -1,4 +1,5 @@
-namespace DayOf_14_Class {
+namespace DayOf_14_Class
+{
     #region Struct Nedir ? 
     // Struct'lar yani yapılar class'lara çok benzerler. Struct ile yapıp class  ile yapamayacağız bir işlem yoktur diyebiliriz. Peki o halde struct yani yapılara neden ihtiyaç duyulur?
     // Class kullanmanızı gerektirecek kadar komplex olmayan yapılarınız varsa ve verileri kapsüllemek işinizi görecekse yapıları tercih edebilirsiniz.
@@ -44,7 +45,8 @@ namespace DayOf_14_Class {
         public int KısaKenar;
         public int UzunKenar;
 
-        public long AlanHesaola(){
+        public long AlanHesaola()
+        {
             return this.KısaKenar + this.UzunKenar;
         }
     }
@@ -56,7 +58,8 @@ namespace DayOf_14_Class {
 
         // Strcut'larda sadece parametli Constructors'e izin verir.
 
-        public long Calculate(){
+        public long Calculate()
+        {
             return this.KısaKenar + this.UzunKenar;
         }
     }

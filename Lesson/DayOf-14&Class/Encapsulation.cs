@@ -12,13 +12,13 @@ namespace DayOf_14_Class
 
     // Örnek
     // class Ogrenci {
-        // private string name; //field
+    // private string name; //field
 
-        // public string Name //property
-        // {
-            // get { return name; }
-            // set { name = value; }
-        // }
+    // public string Name //property
+    // {
+    // get { return name; }
+    // set { name = value; }
+    // }
     // }
 
     // Yukarıda Ogrenci sınıfı içerisinde "name" isminde private bir field tanımı görüyorsunuz. Yani bu field'a sınıf dışında bir yerden erişilemez. 
@@ -29,30 +29,30 @@ namespace DayOf_14_Class
 
     // Propert'lerin farlı bir kullanımı aşağıdan görebilirmisin !
     // class Person {
-        // private int age=0;
-        // public int Age
-        // {
-            // get { return age; }
-            // set {
-                // if (value > 0)
-                // age = value;
-            // }
-        // }
+    // private int age=0;
+    // public int Age
+    // {
+    // get { return age; }
+    // set {
+    // if (value > 0)
+    // age = value;
+    // }
+    // }
     // }
     #endregion
     class Encapsulation
     {
         static void Main(string[] args)
         {
-           Workers workesOne = new Workers("Edleron", "Doğan", 3, "Game Dev", 5);
-           workesOne.BoostScore();
-           workesOne.WorkenrBindings();
+            Workers workesOne = new Workers("Edleron", "Doğan", 3, "Game Dev", 5);
+            workesOne.BoostScore();
+            workesOne.WorkenrBindings();
 
-           workesOne.LossScore();
-           workesOne.LossScore();
-           workesOne.LossScore();
-           workesOne.LossScore();
-           workesOne.LossScore();
+            workesOne.LossScore();
+            workesOne.LossScore();
+            workesOne.LossScore();
+            workesOne.LossScore();
+            workesOne.LossScore();
         }
     }
 
@@ -64,30 +64,35 @@ namespace DayOf_14_Class
         private string departman;
         private int score;
 
-        public string Name {
-            get { return name;  }
+        public string Name
+        {
+            get { return name; }
             set { name = value; }
         }
 
         public string Surname { get => surname; set => surname = value; }
         public int Id { get => id; set => id = value; }
         public string Departman { get => departman; set => departman = value; }
-        public string Score 
-        { 
-            get => score; 
-            set{
-                if(value < 1) {
+        public string Score
+        {
+            get => score;
+            set
+            {
+                if (value < 1)
+                {
                     Console.WriteLine("Best Score time end => 1");
                     score = 1;
-                } else {
+                }
+                else
+                {
                     score = value;
                 }
-            } 
+            }
         }
 
         public Workers()
         {
-           
+
         }
 
         public Workers(string name, string surname, int id, string departman, int score)
@@ -99,7 +104,8 @@ namespace DayOf_14_Class
             Score = score;
         }
 
-        public void WorkenrBindings(){
+        public void WorkenrBindings()
+        {
             Console.WriteLine("Çalışan Adı: {0}", this.Name);
             Console.WriteLine("Çalışan Soyadı: {0}", this.Surname);
             Console.WriteLine("Çalışan Id'si: {0}", this.Id);
@@ -107,11 +113,13 @@ namespace DayOf_14_Class
             Console.WriteLine("Çalışan Departmanı: {0}", this.Score);
         }
 
-        public void BoostScore(){
+        public void BoostScore()
+        {
             this.Score = this.Score + 1;
         }
 
-        public void LossScore(){
+        public void LossScore()
+        {
             this.Score = this.Score - 1;
         }
     }

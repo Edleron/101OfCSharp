@@ -88,7 +88,7 @@ namespace DayOf_9_Metods
 {
     class Program
     {
-    
+
         // Metod (Method) Örneği
         public static int Topla(int sayi1, int sayi2)
         {

@@ -1,31 +1,32 @@
-namespace DayOf_12_Collections {
+namespace DayOf_12_Collections
+{
     #region Generic Collections
-    
+
     #region DESCRIPTION ? 
 
     // C#'ta ArrayList, eski bir koleksiyon sınıfıdır ve .NET Framework'ün önceki sürümlerinde sıkça kullanılmıştır. 
     // Ancak daha modern ve tip güvenli koleksiyonlar olan List<T> ve diğer generic koleksiyonlar (List<T>, Dictionary<TKey, TValue>, vb.) kullanılmaya başlandığından, ArrayList kullanımı genellikle önerilmez. 
     // ArrayList yerine generic koleksiyonları kullanmanız, tip güvenliğini artırır ve daha performanslı kod yazmanıza olanak tanır.
-    
+
     #endregion
 
     #region ArrayList Nedir?
 
-   // ArrayList, .NET Framework tarafından sağlanan bir koleksiyon sınıfıdır ve içerisinde herhangi bir veri türünü saklayabilir. 
+    // ArrayList, .NET Framework tarafından sağlanan bir koleksiyon sınıfıdır ve içerisinde herhangi bir veri türünü saklayabilir. 
     // Bu, farklı veri türlerini aynı koleksiyon içinde bulundurmanıza olanak tanır, ancak tip güvenliği konusunda dikkatli olmanızı gerektirir.   
-    
+
     #endregion
 
     #region ArrayList Oluşturma ve Öğe Ekleme:
 
     // ArrayList oluşturmak için ArrayList sınıfının bir örneğini oluşturabilirsiniz ve Add metoduyla öğeler ekleyebilirsiniz:
-    
+
     #endregion
 
     #region ArrayList İçindeki Öğelere Erişim:
 
-   // ArrayList içindeki öğelere erişmek için indeks numarasını kullanabilirsiniz:
-    
+    // ArrayList içindeki öğelere erişmek için indeks numarasını kullanabilirsiniz:
+
     #endregion
 
     #region ArrayList Döngüsü:

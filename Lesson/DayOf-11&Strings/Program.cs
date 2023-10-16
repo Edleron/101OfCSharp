@@ -1,6 +1,7 @@
 ﻿using System;
 
-namespace DayOf_11_Strings {
+namespace DayOf_11_Strings
+{
 
     class Program
     {
@@ -47,7 +48,7 @@ namespace DayOf_11_Strings {
             string[] meyveler = liste.Split(','); // ["elma", "armut", "çilek", "karpuz"]
             Console.WriteLine(meyveler);
             #endregion
-        
+
             #region DATETIME METODS
             // DateTime Nesnesi Oluşturma
             DateTime simdikiZaman = DateTime.Now; // Geçerli tarih ve saat bilgisini alır
@@ -85,7 +86,7 @@ namespace DayOf_11_Strings {
                 Console.WriteLine("Geçersiz tarih formatı");
             }
             #endregion
-        
+
             #region MATH METODS
             // Temel Matematiksel İşlemler
             double mutlakDeger = Math.Abs(-5.4); // Mutlak değer hesaplar (5.4)

@@ -42,9 +42,10 @@ using System;
 
 namespace DayOf_3_Operatorler
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             // Aritmetik Operatörler
             int sayi1 = 10;
             int sayi2 = 5;

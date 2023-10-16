@@ -1,31 +1,32 @@
-namespace DayOf_12_Collections {
+namespace DayOf_12_Collections
+{
     #region Generic Collections
-    
+
     #region DESCRIPTION ? 
 
     // C#'ta Dictionary<TKey, TValue> sınıfı, anahtar-değer çiftleri koleksiyonunu temsil eden ve anahtarlar aracılığıyla hızlı bir şekilde değerlere erişmenizi sağlayan tip güvenli bir koleksiyon sınıfıdır. 
     // Anahtar-değer çiftleri, her anahtarın yalnızca bir değere karşılık geldiği bir yapıyı ifade eder. İşte Dictionary<TKey, TValue> sınıfını kullanarak anahtar-değer çiftleri koleksiyonu oluşturma ve kullanma hakkında temel bilgiler:
-    
+
     #endregion
 
     #region Dictionary Nedir?
 
     // Dictionary<TKey, TValue>, bir anahtar (TKey) ve bu anahtarın karşılığı olan bir değer (TValue) içeren bir koleksiyon türüdür. Anahtarlar benzersiz olmalıdır, yani aynı anahtara sahip iki öğe bulunamaz.
-    
+
     #endregion
 
     #region Dictionary Oluşturma:
 
     // Dictionary<TKey, TValue> örneği oluşturmak için aşağıdaki gibi bir yol izleyebilirsiniz:
     // Bu örnekte, bir telefon rehberini temsil etmek için bir Dictionary örneği oluşturuluyor. Anahtarlar (kişilerin adları) bir dize (string) türünde ve değerler (telefon numaraları) bir tamsayı (int) türündedir.
-    
+
     #endregion
 
     #region Değer Ekleme ve Erişme:
 
     // Dictionary'e değer eklemek için Add metodu kullanılır:
     // Değerlere erişmek için key'leri kullanabilirsiniz:
-    
+
     #endregion
 
     #region  Değer Güncelleme ve Silme:
@@ -37,7 +38,7 @@ namespace DayOf_12_Collections {
 
     #region  Anahtarları ve Değerleri Döngü İle Gezme:
 
-   // Dictionary içindeki anahtarları ve değerleri döngü(for, foreach) ile gezerek işleyebilirsiniz:
+    // Dictionary içindeki anahtarları ve değerleri döngü(for, foreach) ile gezerek işleyebilirsiniz:
 
     #endregion
 
@@ -91,7 +92,7 @@ namespace DayOf_12_Collections {
             telefonRehberi.Clear(); // Tüm öğeleri siler
             int elemanSayisi = telefonRehberi.Count; // 0
 
-             // TryGetValue Metodu: Bir anahtarın değerini döndürür veya varsayılan değeri döndürür
+            // TryGetValue Metodu: Bir anahtarın değerini döndürür veya varsayılan değeri döndürür
             int telefonNumarasi;
             if (telefonRehberi.TryGetValue("Ahmet", out telefonNumarasi))
             {

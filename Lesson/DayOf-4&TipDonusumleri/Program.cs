@@ -36,9 +36,10 @@ using System;
 
 namespace DayOf_4_TipDönüsümleri
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             // Implicit (Otomatik) Dönüşüm
             int tamSayi = 42;
             double ondalikSayi = tamSayi; // Otomatik dönüşüm, veri kaybı olmadan gerçekleşir

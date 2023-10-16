@@ -1,4 +1,5 @@
-namespace DayOf_14_Class {
+namespace DayOf_14_Class
+{
     #region Class
     // Sınıf Nedir, Neden İhtiyaç Duyarız ?
 
@@ -23,11 +24,11 @@ namespace DayOf_14_Class {
     #region Söz Dizimi
     // class SinifAdi
     // {
-            // [Erişim Belirleyici] [Veri Tipi] Özellik Adı;
-            // [Erişim Belirleyici] [Geri Dönüş Tipi] MetodAdi([Parametre Listesi])
-            // {
-                // Metod Komutları
-            // }
+    // [Erişim Belirleyici] [Veri Tipi] Özellik Adı;
+    // [Erişim Belirleyici] [Geri Dönüş Tipi] MetodAdi([Parametre Listesi])
+    // {
+    // Metod Komutları
+    // }
     // }
     #endregion
 
@@ -60,7 +61,8 @@ namespace DayOf_14_Class {
         public int Id;
         public string Departman;
 
-        public void WorkenrBindings(){
+        public void WorkenrBindings()
+        {
             Console.WriteLine("Çalışan Adı: {0}", Name);
             Console.WriteLine("Çalışan Soyadı: {0}", Surname);
             Console.WriteLine("Çalışan Id'si: {0}", Id);

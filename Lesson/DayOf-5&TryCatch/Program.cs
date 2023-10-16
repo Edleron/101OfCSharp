@@ -14,9 +14,10 @@ using System;
 
 namespace DayOf_5_TryCatch
 {
-    class Program 
+    class Program
     {
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             try
             {
                 // Potansiyel olarak hata üretebilecek kodlar burada bulunur
@@ -32,7 +33,7 @@ namespace DayOf_5_TryCatch
             finally
             {
                 // Bir kod satırı hata alsın yada almasın, son çıktıyı üreten yerdir.
-                 Console.WriteLine("İşlem Tamamlandı ");
+                Console.WriteLine("İşlem Tamamlandı ");
             }
         }
     }

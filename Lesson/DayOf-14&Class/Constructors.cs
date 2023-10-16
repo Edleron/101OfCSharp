@@ -1,4 +1,5 @@
-namespace DayOf_14_Class {    
+namespace DayOf_14_Class
+{
     #region Constructor Kavramı
     // Bir sınıftan bir nesne oluşturulduğunda biz tanımlamasak bile arka planda çalışan varsayılan yapıcı metotlara kurucu yada constructor denir. 
     // Sınıf nesnesi ilk oluşturulduğunda yapılmasını istediğimiz işleri kurucu metotlar içerisinde yaparız.
@@ -47,24 +48,28 @@ namespace DayOf_14_Class {
         public string Departman;
 
         // Constructors Overloadings
-        public Workers(){
-           
+        public Workers()
+        {
+
         }
 
-        public Workers(string name, string surname){
+        public Workers(string name, string surname)
+        {
             this.Name = name;
             this.Surname = surname;
         }
 
         // Constructors Overloadings
-        public Workers(string name, string surname, int id, string departman){
+        public Workers(string name, string surname, int id, string departman)
+        {
             this.Name = name;
             this.Surname = surname;
             this.Id = id;
             this.Departman = departman;
         }
 
-        public void WorkenrBindings(){
+        public void WorkenrBindings()
+        {
             Console.WriteLine("Çalışan Adı: {0}", Name);
             Console.WriteLine("Çalışan Soyadı: {0}", Surname);
             Console.WriteLine("Çalışan Id'si: {0}", Id);
