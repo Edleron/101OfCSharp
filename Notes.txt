@@ -1,0 +1,2 @@
+
+Sln dosyasında, Proje csproj yok ise Visual Studiodan El ile Ekleme Yap

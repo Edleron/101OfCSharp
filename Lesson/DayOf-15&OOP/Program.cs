@@ -37,8 +37,63 @@
 // 4-) Inheritance (Kalıtım, Miras)  Nedir ?    --->
 #endregion
 
+#region Inheritance
+// Bir sınıfın başka bir üst sınıftan miras almasına kalıtım denir. Miras veren sınıf tüm özelliklerini alt sınıfa aktarmış olur.
+
+// Kalıtım çok soyut bir kavram olması itibariyle anlaşılması zor bir konudur. Bunun için en kolay anlaşılabilecek örnekler üzerinden denenmesinin faydalı olduğunu düşünüyorum. 
+// Bu da Canlılar - Hayvanlar - Bitkiler ayrımı ile anlaşılabilir.
+#endregion
+
+#region Polymorphism
+// Polimorfizm, aynı isimle çağrılan metotların farklı davranışlar sergileyebilmesine olanak tanır. 
+// Bu, bir üst sınıftan miras alınmış metotları alt sınıflarda yeniden tanımlayarak veya arayüzleri uygulayarak gerçekleştirilebilir. Bu, kodun daha esnek ve genişletilebilir olmasına olanak tanır.
+
+// Çok biçimcilik ile birlikte hayatımıza sanal yani virtual metotlar giriyor. Virtual metotlar ile nesne yönelimli programlama ilkesi olan polymorphism'i uygularız. 
+// Sanal metotlar kalıtım alınan yani miras veren sınıf içerisinde yazılan ve daha sonra alt sınıflarda yeniden yazılabilen metotlardır. Bunu da virtual ve override anahtar kelimeleri sağlar.
+
+// Base Class'ta virtual anatar kelimesiyle, sanal metodlar yaratılır. Base class'ı kalıtım alam sınıflar üst sınıfta yazılan ve daha sonrasında alt sınıflarda yeniden yazılabilen -> biçimi değiştirilem, biçimi değiştirilerek yeni bir şeyler katılan,
+// Yada içeriği tamamen değiştirlen metodlara override keyword ile yeniden tanımlama yaparak, üst sınıftaki base kodları yeniden düzenleyebiliriz. Buda kodumuza esneklik ve bazrı ekstra ayrıcalıklar katacaktır. //
+// Ayrıca alt tabadaki tipindeki nesneler, gerçekte hangi alt sınıfın örneği olduklarını gözetmeksizin doğru davranışı sergilerler.
+
+// Sealed Class:
+// "Sealed" kelimesi, bir sınıfın başka bir sınıf tarafından miras alınamayacağını belirtmek için kullanılır. 
+// Sealed sınıflar, özellikle belirli bir sınıfın özgün davranışını korumak istediğinizde kullanışlıdır. Aşağıda, bir "Sealed Class" örneği verilmiştir:
+#endregion
+
+#region Interface
+// Interface Nedir?
+// Bir interface (arayüz), C# programlama dilinde bir referans tipi olarak kabul edilir ve sınıflar arasında belirli bir davranışı veya yeteneği tanımlamak için kullanılır. 
+// Interface, içerisinde sadece metot bildirimleri, özellikler (get ve set yöntemleri) ve olaylar (events) bulunan bir sözleşme gibidir. 
+// Bir sınıf, bir interface'i uyguladığında, bu sınıf o interface'de tanımlanan tüm metotları ve özellikleri içermek zorunda kalır. 
+// Interface'ler, çoklu mirasın yerine kullanılabilen bir yol sunar.
+
+// Interface Ne İşe Yarar?
+// Kodun Soyutlanmasını Sağlar: Interface'ler, sınıflar arasında belirli bir davranışı veya sözleşmeyi tanımlamak için kullanılır. Bu sayede sınıfların belirli bir arayüzü uygulaması sağlanır.
+// Çoklu Miras İmkanı Sağlar: C# dilinde, bir sınıf yalnızca tek bir sınıfı miras alabilir (inherit), ancak bir sınıf birden fazla interface'i uygulayabilir. Bu, çoklu mirasın sınırlamalarını aşmanın bir yoludur.
+// Kodun Daha Okunabilir ve Yönetilebilir Olmasını Sağlar: Interface'ler, kodun daha anlaşılır ve yönetilebilir olmasına yardımcı olur. Aynı arayüzü uygulayan sınıflar, benzer davranışları paylaşır ve bu, kodun düzenli ve tutarlı olmasını sağlar.
+
+// Kurallar
+// Interface'ler I ile kelimeye başlar,
+// İçindeki metod gövdeleri boş olmak zorundadır.
+// Interface içerisindeki propert'lere değer ataması yapılmaz.
+// Interface'ler sadece class'lara implemente edilir.
+
+// Interface'ler sadece implemente edilen sınıfa ne iş yaptığının arayüz bilgisini veren iş gibi düşünebilirsiniz. !
+// Interface'ler'den kalıtım alan sınıfın yani çerçevesinin çizilmesine yardımcı olur.
+// Farklı sorumlulukları verme ve class'ı bilgilendirme biçimidir !
+// Class aynı işi kendi tarzında yapma olanaığına sahip olur.
+
+// Interface yani arayüzler nesneye dayalı programlamanın önemli özelliklerinden biridir. Sınıfların içermesi gereken metotların imzalarının yer aldığı, özelliklerin tanımlandığı bir taslak gibi düşünebiliriz.
+// Kesin belirlenmiş bir kural olmamasıyla beraber interface isimleri "I" ile başlar. I ile başlayan bir isim gördüğümüzde kolaylıkla bunun bir arayüz olduğunu anlarız. Dolayısıyla standartlara bağlı kalmakta fayda var.
+// Interface içerisindeki property'lere bir değer ataması yapılmaz, metotların ise gövdesi yazılmaz. Sadece implemente eden sınıfın ne iş yaptığının bir arayüzüdür interface'ler. Ve bir sınıf aynı anda birden fazla arayüzden kalıtım alabilir.
+// Peki interface'lere neden ihtiyaç duyarız? Kalıtım alan sınıfın sorumluluğunun çerçevesinin çizilmesine yardımcı olur diyebilir. 
+// Aynı sorumluluğu başka bir yoğurt yiyiş tarzıyla yapması gereken bir sınıf geldiğinde aynı interface den kalıtım alır ama yapacağı işi farklı şekilde yapar.
+#endregion
+
 using System;
+using DayOf_15_OOP.Exams;
 using DayOf_15_OOP.Inheritance;
+using DayOf_15_OOP.Interface;
 
 namespace DayOf_15_OOP
 {
@@ -47,12 +102,47 @@ namespace DayOf_15_OOP
     {
         static void Main(string[] args)
         {
+            // Polymorphism & Inheritancfe
             TohumluBitkiler tohumluBitki = new TohumluBitkiler();
-            tohumluBitki.Beslenme();
+            // tohumluBitki.Beslenme();
             tohumluBitki.Bosaltim();
-            tohumluBitki.Solunum();
+            // tohumluBitki.Solunum();
             tohumluBitki.Fotosentez();
             tohumluBitki.TohumlaCogalma();
+
+            Kuslar kus = new Kuslar();
+
+            // Interface
+
+            #region Interface Basic Use
+            FileLogger fileLogger = new FileLogger();
+            fileLogger.WriteLog();
+
+            DatabaseLogger databaseLogger = new();
+            databaseLogger.WriteLog();
+
+            SmsLogger smsLogger = new();
+            smsLogger.WriteLog();
+            #endregion
+
+            #region Interface Intermediate Use
+            // Artık Hangi class'ı yarattığım ile ilginemiyorum. Log Manager bunun yerine bu işi kendi yapıyor
+            LogManager logManager = new LogManager(new FileLogger());
+            logManager.WriteLog();
+            #endregion
+
+            #region  Interface Master Use
+            Focus focus = new Focus();
+            Console.WriteLine(focus.WhichBrand().ToString());
+            Console.WriteLine(focus.StandartColor().ToString());
+            Console.WriteLine(focus.WhellCount().ToString());
+
+
+            Civis civis = new Civis();
+            Console.WriteLine(civis.WhichBrand().ToString());
+            Console.WriteLine(civis.StandartColor().ToString());
+            Console.WriteLine(civis.WhellCount().ToString());
+            #endregion
         }
     }
 }
