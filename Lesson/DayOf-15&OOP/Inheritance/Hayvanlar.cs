@@ -11,6 +11,13 @@ namespace DayOf_15_OOP
         {
             Console.WriteLine("Hayvanlar Adaptasyon Yapar. !");
         }
+
+        public override void UyaranlaraTepki()
+        {
+            // gel burada base kodu çalıştır.
+            // base.UyaranlaraTepki();
+            Console.WriteLine("Hayvalar Temeasa Tepki Verir !");
+        }
     }
 
 

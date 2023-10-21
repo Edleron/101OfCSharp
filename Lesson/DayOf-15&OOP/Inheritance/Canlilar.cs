@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 namespace DayOf_15_OOP
 {
     public class Canlilar
+    // public sealed class Canlilar // -> Kodun tamamı hata verir, Çünkü sealed işaretli class'lar kalıtım veremez.
     {
-        public void Beslenme()
+        protected void Beslenme()
         {
             Console.WriteLine("Canlılar Beslenir. !");
         }
 
-        public void Solunum()
+        protected void Solunum()
         {
             Console.WriteLine("Canlılar Solunum Yapar. !");
         }
@@ -20,6 +21,10 @@ namespace DayOf_15_OOP
         public void Bosaltim()
         {
             Console.WriteLine("Canlılar Boşaltım Yapar. !");
+        }
+
+        public virtual void UyaranlaraTepki(){
+             Console.WriteLine("Canlılar Uyaranlara Tepki Verir. !");
         }
     }
 }
