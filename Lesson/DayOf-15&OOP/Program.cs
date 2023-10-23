@@ -90,6 +90,68 @@
 // Aynı sorumluluğu başka bir yoğurt yiyiş tarzıyla yapması gereken bir sınıf geldiğinde aynı interface den kalıtım alır ama yapacağı işi farklı şekilde yapar.
 #endregion
 
+#region Abstract
+// Abstract class'lar Nedir ?
+// Abstract class'ları sadece kalıtım olarak düşünebileceğiniz base sınıflardır.
+// Bazı özellikleri ile class'lara benzer iken, bazı özellikleri ise interface'lere benzemektedir.
+// Abstract class'ları virtual metodlar ve interface metodların birleşimi gibi düşünebilirisinz.
+// Normal sınıflar gibi new anahtar kelimesiyle üretilemezler, Instance'ları alınamaz.
+// Sınıflara benzerler ama nesneleri türetilemez.
+// Tek başlarına anlamları olan yapılar değillerdir.
+// Muhakkak bir sınıf ile berebaer kullanılması gerekmektedir.
+// Interface'ler gibi metod bildiri yapabiliriz -> Yani gövdesine boş olan metodlar ekleyebiliriz.
+// Virtual metodlar override edilebilirken, abstract class'ların metodlarıda override edilebilir.
+// Bir abstract class içerisine abstract metodlar yazılabilir.
+// Miras alan sınıflar, Eğer base abstract class'ta, abstract metod'lar var ise, onu override etmek zorundadır.
+// Bir sınıf sadece bir tane abstract class'tan miras alabilir.
+// Abstract sınıflar baska abstract class'lardan miras alabilir.
+
+// Abstract Class
+// Abstract class'ları sadece kalıtım için kullanılan sınıflar gibi düşünebilirsiniz. 
+// Bazı özellikleri ile sınıflara benzerlerken bazı özellikleriyle arayüzlere benzerler. Abstract sınıfları arayüz ve virtual metotların birleşimi gibi davranış gösterirler.
+
+// Abstract Class Özellikleri
+// Normal sınıflar gibi new() anahtar kelimesi ile türetilemezler.
+// Interface ler gibi metot bildirimi yapabilirsiniz.
+// Sanal metotları override eder gibi abstract metotlar override edilebilir.
+// Abstract metotların gövdesi yazılamaz.
+// Bir abstract class bir abstract metot içeriyorsa, abstract sınıftan türeyen tüm sınıflar bu metodu override etmek zorundadır.
+// Bir sınıf sadece tek abstract sınıftan kalıtım alabilir.
+// Abstract sınıf başka bir abstract sınıftan kalıtım alabilir. 
+// Dolaylı olacak türeyen sınıfta birden fazla abstract dan kalıtım almış olur. Ve bağlantılı olduğu tüm abstract sınıfların bildirimi yapılmış olan abstract metotlarını override etmek zorundadır.
+
+// NOT 1
+// Abstract sınıf içerisinde metot bildirimi yapabilmek için metodun erişim belirtecinden sonra "abstract" anahtar kelimesi mutlaka yazılmalıdır.
+
+// NOT 2
+// Abstract metotdan türetilmiş sınıf içerisinde abstract metodun kullanılabilmesi için de override anahtar kelimesinin kullanılması gerekir.
+
+
+// SORU - 1
+// Bir sınıfın en fazla kaç farklı sınıftan kalıtım alabilir?
+// Cevapl - 1
+
+// SORU -2
+// Alt sınıftan miras veren temel sınıfın açmış olduğu metotları çağırmak için aşağıdaki anahtar kelimelerden hangisi kullanılır?
+// Cevap -> Base
+
+// SORU -3
+// Virtual anahtar kelimesi ile yazılan metodun alt sınıfta yeniden biçimlendirilmesi için kullanılması gereken anahtar kelime aşağıdakilerden hangisidir?
+// override
+
+// SORU -4
+// Bir sınıfın diğer sınıflar tarafından türetilmesi engellenmek isteniyorsa, aşağıdaki anahtar kelimelerden hangisi kullanılmalıdır?
+// sealed
+
+// SORU -5
+// Interface isimlendirmesinin I ile başlamasıyla ilgili aşağıdakilerden hangisi doğru bilgidir?
+// I ile başlaması programcılar arasındaki ortak dili destekler.
+
+// SORU -6
+// Temel sınıfın üyelerinden birinin sadece türetildiği sınıflardan erişilmesi isteniyorsa aşağıdaki erişim belirteçlerinden hangisi kullanılmalıdır?
+// protected
+#endregion
+
 using System;
 using DayOf_15_OOP.Exams;
 using DayOf_15_OOP.Inheritance;
@@ -142,6 +204,18 @@ namespace DayOf_15_OOP
             Console.WriteLine(civis.WhichBrand().ToString());
             Console.WriteLine(civis.StandartColor().ToString());
             Console.WriteLine(civis.WhellCount().ToString());
+            #endregion
+
+            #region Abstract Class Use
+            Porshe porshe = new Porshe();
+            Console.WriteLine(porshe.WhichBrand().ToString());
+            Console.WriteLine(porshe.StandartColor().ToString());
+            Console.WriteLine(porshe.WhellCount().ToString());
+
+            Renault renault = new Renault();
+            Console.WriteLine(renault.WhichBrand().ToString());
+            Console.WriteLine(renault.StandartColor().ToString());
+            Console.WriteLine(renault.WhellCount().ToString());
             #endregion
         }
     }
